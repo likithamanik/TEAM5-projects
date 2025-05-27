@@ -174,4 +174,18 @@ div class="container" id="review">
     <p style="text-align:center;">Your feedback helps us improve. Keep learning and growing! 🚀</p>
     <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('timetable')">Back to Start</a></div>
   </div>
+  <script>
+    function navigateTo(pageId) {
+      document.querySelectorAll('.container').forEach(container => {
+        container.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+
+    function showEmoji(message) {
+      document.getElementById('emoji').textContent = message;
+    }
+  </script>
+</body>
+</html>
 		

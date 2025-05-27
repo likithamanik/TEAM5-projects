@@ -154,4 +154,15 @@ th {
     <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('review')">Next: Review Page</a></div>
   </div>
 
+div class="container" id="review">
+    <h1>🌟 Leave a Review</h1>
+    <p style="text-align:center;">Please rate your experience:</p>
+    <div class="star-rating" style="text-align:center;">
+      <input type="radio" id="5-stars" name="rating" value="5" onclick="showEmoji('😍 Thank you for 5 stars!')" /><label for="5-stars">★</label>
+      <input type="radio" id="4-stars" name="rating" value="4" onclick="showEmoji('😊 Thanks a lot!')" /><label for="4-stars">★</label>
+      <input type="radio" id="3-stars" name="rating" value="3" onclick="showEmoji('😐 Okay!')" /><label for="3-stars">★</label>
+      <input type="radio" id="2-stars" name="rating" value="2" onclick="showEmoji('😕 We will improve!')" /><label for="2-stars">★</label>
+      <input type="radio" id="1-star" name="rating" value="1" onclick="showEmoji('😞 Sorry to hear that!')" /><label for="1-star">★</label>
+    </div>
+    <div class="emoji" id="emoji"></div>
 		

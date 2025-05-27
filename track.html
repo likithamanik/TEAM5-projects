@@ -70,3 +70,20 @@ th {
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
+   .channel-list a:hover {
+      transform: scale(1.05);
+    }
+    .star-rating input {
+      display: none;
+    }
+    .star-rating label {
+      font-size: 30px;
+      color: #ddd;
+      cursor: pointer;
+    }
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }
+

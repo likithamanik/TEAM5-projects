@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTracker - M.Tech Study Planner</title>
+  <style>
+* {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1584697964354-749f99fa8b05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+ .container {
+      display: none;
+      max-width: 1000px;:
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+    }
+.container.active {
+      display: block;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    ul, table {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+ .logo {
+      text-align: center;
+      font-size: 28px;
+    }
+.button {
+      display: inline-block;
+      margin: 30px auto 0;
+      padding: 12px 25px;
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .
+th {
+      background-color: #f2f2f2;
+    }
+    
+      text-align: center;
+      text-decoration: none;
+      color: #2c3e50;
+      transition: transform 0.3s;
+    }
+    .channel-list img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+   .channel-list a:hover {
+      transform: scale(1.05);
+    }
+    .star-rating input {
+      display: none;
+    }
+    .star-rating label {
+      font-size: 30px;
+      color: #ddd;
+      cursor: pointer;
+    }
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }
+.emoji {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="logo">📘 EduTracker</div>
+
+  <div class="container active" id="timetable">
+<<<<<<< HEAD
+    <h1>📅 Weekly and Monthly Study Timetable</h1>
+=======
+    <h1>📅 Weekly an Monthly Study Timetable</h1>
+>>>>>>> s11
+    <h2>Weekly Plan</h2>
+    <table>
+      <tr><th>Day</th><th>Subjects</th></tr>
+      <tr><td>Monday</td><td>Research Methodology, Managerial Economics</td></tr>
+      <tr><td>Tuesday</td><td>Data Science, Business Communication</td></tr>
+      <tr><td>Wednesday</td><td>Machine Learning, Financial Accounting</td></tr>
+      <tr><td>Thursday</td><td>Project Work, Group Discussion</td></tr>
+<tr><td>Friday</td><td>Seminar Prep, Statistics for Management</td></tr>
+      <tr><td>Saturday</td><td>Industry Case Studies, Coding/Excel</td></tr>
+      <tr><td>Sunday</td><td>Rest and Weekly Review</td></tr>
+    </table>
+    <h2>Monthly Focus Areas</h2>
+    <ul>
+<li><strong>Week 1:</strong> Subject Deep Dive - Choose One Core Subject</li>
+      <li><strong>Week 2:</strong> Industry Trends, Workshops</li>
+      <li><strong>Week 3:</strong> Project Work and Mock Presentations</li>
+      <li><strong>Week 4:</strong> Final Revision and Assessment</li>
+    </ul>
+ <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('tips')">Next: Study Tips</a></div>
+  </div>
+
+  <div class="container" id="tips">
+    <h1>💡 Study Tips</h1>
+    <ul>
+      <li>Use time-blocking techniques to manage classes and projects.</li>
+      <li>Stay consistent with assignments and readings.</li>
+      <li>Engage in peer learning and discussions.</li>
+      <li>Use apps like Notion, Trello for project management.</li>
+      <li>Practice presentation and communication regularly.</li>
+    </ul>
+    <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('channels')">Next: Study Channels</a></div>
+  </div>
+<div class="container" id="channels">
+    <h1>📺 Recommended YouTube Channels</h1>
+    <div class="channel-list">
+      <a href="https://www.youtube.com/c/GreatLearning" target="_blank">
+        <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPDgcnBMbguNNhWBbr65Slm3XXm2qGzt7nhKrLUXA=s900-c-k-c0x00ffffff-no-rj" alt="Great Learning" />
+        <div>Great Learning</div>
+      </a>
+      <a href="https://www.youtube.com/c/mitocw" target="_blank">
+        <img src="https://yt3.googleusercontent.com/ytc/AGIKgqO0Ng63wb60v3hdo6vftde9bhqZsjmZsSpRc9x_9g=s900-c-k-c0x00ffffff-no-rj" alt="MIT OCW" />
+        <div>MIT OCW</div>
+      </a>
+      <a href="https://www.youtube.com/user/HarvardBusiness" target="_blank">
+        <img
+	src="https://yt3.googleusercontent.com/ytc/AGIKgqMPT0WzqtxkLpbU6H8A0zqP0SnFuBRzHuA_iVCkRw=s900-c-k-c0x00ffffff-no-rj" alt="Harvard iLabs" />
+        <div>Harvard iLabs</div>
+      </a>
+      <a href="https://www.youtube.com/c/BackstageWithMillionaires" target="_blank">
+        <img src="https://yt3.googleusercontent.com/ytc/AGIKgqM19YMyScG_zqx6EdWJ2GyD4l3cfAvX9I3X9NaT1g=s900-c-k-c0x00ffffff-no-rj" alt="Backstage Millionaires" />
+        <div>Backstage w/ Millionaires</div>
+      </a>
+    </div>
+    <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('review')">Next: Review Page</a></div>
+  </div>
+
+div class="container" id="review">
+    <h1>🌟 Leave a Review</h1>
+    <p style="text-align:center;">Please rate your experience:</p>
+    <div class="star-rating" style="text-align:center;">
+      <input type="radio" id="5-stars" name="rating" value="5" onclick="showEmoji('😍 Thank you for 5 stars!')" /><label for="5-stars">★</label>
+      <input type="radio" id="4-stars" name="rating" value="4" onclick="showEmoji('😊 Thanks a lot!')" /><label for="4-stars">★</label>
+      <input type="radio" id="3-stars" name="rating" value="3" onclick="showEmoji('😐 Okay!')" /><label for="3-stars">★</label>
+      <input type="radio" id="2-stars" name="rating" value="2" onclick="showEmoji('😕 We will improve!')" /><label for="2-stars">★</label>
+      <input type="radio" id="1-star" name="rating" value="1" onclick="showEmoji('😞 Sorry to hear that!')" /><label for="1-star">★</label>
+    </div>
+    <div class="emoji" id="emoji"></div>
+<textarea rows="4" style="width:100%; margin-top: 15px;" placeholder="Your feedback..."></textarea>
+    <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('exit')">Submit & Exit</a></div>
+  </div>
+
+  <div class="container" id="exit">
+    <h1>✅ Thank You!</h1>
+    <p style="text-align:center;">Your feedback helps us improve. Keep learning and growing! 🚀</p>
+    <div style="text-align: center;"><a class="button" href="#" onclick="navigateTo('timetable')">Back to Start</a></div>
+  </div>
+  <script>
+    function navigateTo(pageId) {
+      document.querySelectorAll('.container').forEach(container => {
+        container.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+
+    function showEmoji(message) {
+      document.getElementById('emoji').textContent = message;
+    }
+  </script>
+</body>
+</html>
+		
